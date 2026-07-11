@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Events By Evara — Premium luxury event management agency specializing in weddings, corporate events, concerts, destination celebrations, and high-end parties.">
+  <meta name="keywords" content="event management, luxury weddings, corporate events, concert planning, destination weddings, party planning, Events By Evara">
+  <meta name="author" content="Events By Evara">
+  <meta name="theme-color" content="#5B21B6">
+  <meta property="og:title" content="Events By Evara — Luxury Event Management">
+  <meta property="og:description" content="Turning every celebration into a timeless experience. Premium event planning for weddings, corporate events, concerts, and more.">
+  <meta property="og:type" content="website">
+  <title>Events By Evara — Premium Luxury Event Management</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%235B21B6'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23F4C430' font-family='serif' font-weight='bold'>E</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Premium Ambient Enhancements -->
+  <div class="aurora-bg" aria-hidden="true"></div>
+  <div class="cursor-spotlight" id="cursorSpotlight" aria-hidden="true"></div>
+  <canvas class="premium-particles" id="premiumParticles" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+
+  <!-- ============================================
+       SCROLL PROGRESS BAR
+  ============================================ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============================================
+       1. PREMIUM LOADER
+  ============================================ -->
+  <div class="loader" id="loader">
+    <div class="loader-logo-wrapper">
+      <div class="loader-logo-e">E</div>
+    </div>
+    <div class="loader-brand">Events By <span>Evara</span></div>
+    <div class="loader-tagline">Crafting Timeless Celebrations</div>
+  </div>
+
+  <!-- ============================================
+       2. STICKY NAVIGATION BAR
+  ============================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#home" class="nav-logo" aria-label="Events By Evara - Home">
+        <div class="nav-logo-icon">E</div>
+        Events By <span>Evara</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu" role="menubar">
+        <a href="#home" class="nav-link active" role="menuitem">Home</a>
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#events" class="nav-link" role="menuitem">Events</a>
+        <a href="#services" class="nav-link" role="menuitem">Services</a>
+        <a href="#gallery" class="nav-link" role="menuitem">Gallery</a>
+        <a href="#testimonials" class="nav-link" role="menuitem">Testimonials</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+
+        <div class="nav-actions">
+          <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#contact" class="nav-book-btn btn-ripple">Book Event</a>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-menu-overlay" id="navOverlay"></div>
+
+  <!-- ============================================
+       3. HERO SECTION
+  ============================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&q=80" alt="Large scale event management with a concert crowd and stage" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Particles -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+    </div>
+
+    <!-- Mouse Glow -->
+    <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-label" data-aos="fade-down" data-aos-delay="200">
+            <i class="fas fa-gem"></i>
+            Premium Event Management
+          </div>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+            Turning Every Celebration Into A <span class="gold">Timeless Experience</span>
+          </h1>
+
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+            Luxury Event Planning • Weddings • Corporate Events • Concerts • Destination Celebrations
+          </p>
+
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+            <a href="#contact" class="btn btn-primary btn-lg btn-ripple">
+              <i class="fas fa-calendar-check"></i> Plan Your Event
+            </a>
+            <a href="#gallery" class="btn btn-outline btn-lg btn-ripple">
+              <i class="fas fa-images"></i> Explore Our Work
+            </a>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="1000">
+            <div class="hero-stat">
+              <div class="hero-stat-number">
+                <span class="counter" data-target="500">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="hero-stat-label">Events</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">
+                <span class="counter" data-target="10">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="hero-stat-label">Years</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">
+                <span class="counter" data-target="100">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="hero-stat-label">Corporate Clients</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">
+                <span class="counter" data-target="50">0</span><span class="counter-suffix">+</span>
+              </div>
+              <div class="hero-stat-label">Awards</div>
+            </div>
+          </div>
+
+          <div class="hero-cards" data-aos="fade-up" data-aos-delay="1200">
+            <div class="hero-card">
+              <div class="hero-card-icon"><i class="fas fa-ring"></i></div>
+              <div class="hero-card-text">Weddings</div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-icon"><i class="fas fa-building"></i></div>
+              <div class="hero-card-text">Corporate</div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-icon"><i class="fas fa-birthday-cake"></i></div>
+              <div class="hero-card-text">Birthday</div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-icon"><i class="fas fa-music"></i></div>
+              <div class="hero-card-text">Concerts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"><!-- wheel animated via CSS --></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4. TRUSTED BY
+  ============================================ -->
+  <section class="trusted" aria-label="Trusted by leading brands">
+    <p class="trusted-label">Trusted By Leading Brands & Organizations</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-item"><i class="fas fa-gem"></i> Taj Hotels</span>
+        <span class="marquee-item"><i class="fas fa-star"></i> Oberoi Group</span>
+        <span class="marquee-item"><i class="fas fa-crown"></i> ITC Hotels</span>
+        <span class="marquee-item"><i class="fas fa-building"></i> Infosys</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> TCS</span>
+        <span class="marquee-item"><i class="fas fa-gem"></i> Reliance</span>
+        <span class="marquee-item"><i class="fas fa-star"></i> Mahindra Group</span>
+        <span class="marquee-item"><i class="fas fa-crown"></i> Aditya Birla</span>
+        <span class="marquee-item"><i class="fas fa-building"></i> Godrej</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> Wipro</span>
+        <!-- Duplicated for seamless scroll -->
+        <span class="marquee-item"><i class="fas fa-gem"></i> Taj Hotels</span>
+        <span class="marquee-item"><i class="fas fa-star"></i> Oberoi Group</span>
+        <span class="marquee-item"><i class="fas fa-crown"></i> ITC Hotels</span>
+        <span class="marquee-item"><i class="fas fa-building"></i> Infosys</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> TCS</span>
+        <span class="marquee-item"><i class="fas fa-gem"></i> Reliance</span>
+        <span class="marquee-item"><i class="fas fa-star"></i> Mahindra Group</span>
+        <span class="marquee-item"><i class="fas fa-crown"></i> Aditya Birla</span>
+        <span class="marquee-item"><i class="fas fa-building"></i> Godrej</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> Wipro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       5. ABOUT EVENTS BY EVARA
+  ============================================ -->
+  <section class="section" id="about" aria-label="About us">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Images Side -->
+        <div class="about-images" data-aos="fade-right">
+          <div class="about-img-main img-zoom">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Elegant event planning team at work" loading="lazy">
+          </div>
+          <div class="about-img-float img-zoom" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&q=80" alt="Beautiful floral wedding decoration" loading="lazy">
+          </div>
+          <div class="about-experience-badge" data-aos="fade-right" data-aos-delay="500">
+            <div class="number">10+</div>
+            <div class="text">Years Experience</div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="about-text" data-aos="fade-left">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Crafting <span class="highlight">Extraordinary</span> Moments Since 2014</h2>
+          <p class="about-desc">Events By Evara is a premium luxury event management company dedicated to turning your most cherished moments into unforgettable celebrations. With over a decade of experience, we bring creativity, elegance, and perfection to every event we touch.</p>
+          <p class="about-desc">Our team of passionate planners, designers, and coordinators work tirelessly to ensure that every detail — from the grandest stage design to the smallest floral arrangement — reflects the luxury and sophistication our clients deserve.</p>
+
+          <div class="about-values">
+            <div class="about-value"><i class="fas fa-check"></i> Creative Excellence</div>
+            <div class="about-value"><i class="fas fa-check"></i> Luxury Experience</div>
+            <div class="about-value"><i class="fas fa-check"></i> Dedicated Support</div>
+            <div class="about-value"><i class="fas fa-check"></i> Transparent Pricing</div>
+            <div class="about-value"><i class="fas fa-check"></i> Premium Vendors</div>
+            <div class="about-value"><i class="fas fa-check"></i> On-Time Delivery</div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-ripple">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="about-timeline" data-aos="fade-up">
+        <div class="section-header" style="margin-top: 60px;">
+          <span class="section-label">Our Journey</span>
+          <h3 class="section-title">A <span class="highlight">Decade</span> of Celebrations</h3>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <span class="timeline-year">2014</span>
+            <h4 class="timeline-title">Founded Events By Evara</h4>
+            <p class="timeline-desc">Started with a vision to redefine luxury event planning in India.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+            <span class="timeline-year">2017</span>
+            <h4 class="timeline-title">100th Grand Event</h4>
+            <p class="timeline-desc">Celebrated our 100th milestone event — a royal destination wedding in Udaipur.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+            <span class="timeline-year">2020</span>
+            <h4 class="timeline-title">Award-Winning Agency</h4>
+            <p class="timeline-desc">Recognized as "Best Event Management Company" at the National Event Awards.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+            <span class="timeline-year">2024</span>
+            <h4 class="timeline-title">500+ Events Completed</h4>
+            <p class="timeline-desc">Expanded to 20+ cities with a team of 150+ professionals and growing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       6. WHY CHOOSE US
+  ============================================ -->
+  <section class="section section-alt" id="whyUs" aria-label="Why choose us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">What Makes Us <span class="highlight">Different</span></h2>
+        <p class="section-desc">We don't just plan events — we craft experiences that leave lasting impressions. Here's why leading brands and families trust us.</p>
+      </div>
+      <div class="why-grid">
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-card-icon"><i class="fas fa-palette"></i></div>
+          <h4>Creative Team</h4>
+          <p>Award-winning designers who transform venues into breathtaking experiences.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-card-icon"><i class="fas fa-crown"></i></div>
+          <h4>Luxury Experience</h4>
+          <p>Every event is treated with the utmost care, delivering a truly premium experience.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-card-icon"><i class="fas fa-tags"></i></div>
+          <h4>Affordable Packages</h4>
+          <p>Luxury doesn't have to break the bank. Flexible packages for every budget.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-card-icon"><i class="fas fa-user-tie"></i></div>
+          <h4>Dedicated Managers</h4>
+          <p>A personal event manager assigned to your event from start to finish.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-card-icon"><i class="fas fa-headset"></i></div>
+          <h4>24×7 Support</h4>
+          <p>Round-the-clock assistance to ensure everything runs perfectly.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-card-icon"><i class="fas fa-handshake"></i></div>
+          <h4>Trusted Professionals</h4>
+          <p>Vetted vendors and professionals who deliver excellence consistently.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-card-icon"><i class="fas fa-cogs"></i></div>
+          <h4>Modern Equipment</h4>
+          <p>State-of-the-art sound, lighting, and production equipment for every event.</p>
+        </div>
+        <div class="premium-card why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-card-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h4>Customized Planning</h4>
+          <p>Every event is unique. We tailor every detail to match your vision perfectly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       7. TYPES OF EVENTS
+  ============================================ -->
+  <section class="section" id="events" aria-label="Types of events">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Expertise</span>
+        <h2 class="section-title">Types of <span class="highlight">Events</span> We Plan</h2>
+        <p class="section-desc">From intimate celebrations to grand spectacles, we specialize in creating unforgettable events across every category.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Luxury wedding ceremony" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-ring"></i></div>
+            <h4>Luxury Weddings</h4>
+            <p>Crafting fairy-tale weddings with exquisite décor, premium venues, and flawless execution.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80" alt="Birthday celebration" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-birthday-cake"></i></div>
+            <h4>Birthday Parties</h4>
+            <p>Themed birthday celebrations from children's parties to milestone birthdays.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Corporate conference event" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-building"></i></div>
+            <h4>Corporate Events</h4>
+            <p>Professional conferences, product launches, galas, and team-building events.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80" alt="Live concert performance" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-music"></i></div>
+            <h4>Concerts & Shows</h4>
+            <p>Live music events, artist management, and spectacular stage productions.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Award ceremony" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-trophy"></i></div>
+            <h4>Award Shows</h4>
+            <p>Glamorous award ceremonies with red carpet setups and celebrity hosting.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&q=80" alt="Fashion show runway" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-tshirt"></i></div>
+            <h4>Fashion Shows</h4>
+            <p>High-fashion runway events with premium staging and production.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=600&q=80" alt="Destination wedding" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-plane"></i></div>
+            <h4>Destination Weddings</h4>
+            <p>Dream weddings at exotic locations — from Goa beaches to Rajasthan palaces.</p>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-card-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80" alt="Private party celebration" loading="lazy">
+            <div class="event-card-overlay"><a href="#contact" class="btn btn-primary btn-sm">Plan This</a></div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-icon"><i class="fas fa-champagne-glasses"></i></div>
+            <h4>Private Parties</h4>
+            <p>Exclusive private celebrations, cocktail parties, and VIP gatherings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       8. OUR SERVICES
+  ============================================ -->
+  <section class="section section-alt" id="services" aria-label="Our services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our Premium <span class="highlight">Services</span></h2>
+        <p class="section-desc">A comprehensive suite of luxury event services to make your celebration flawless from start to finish.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-palette"></i></div>
+          <h4>Venue Decoration</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-theater-masks"></i></div>
+          <h4>Stage Design</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+          <h4>Lighting</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-volume-up"></i></div>
+          <h4>Sound Systems</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon"><i class="fas fa-camera"></i></div>
+          <h4>Photography</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-video"></i></div>
+          <h4>Videography</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-helicopter"></i></div>
+          <h4>Drone Coverage</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-utensils"></i></div>
+          <h4>Catering</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon"><i class="fas fa-guitar"></i></div>
+          <h4>Entertainment</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-star"></i></div>
+          <h4>Celebrity Mgmt</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon"><i class="fas fa-microphone"></i></div>
+          <h4>Artist Booking</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h4>Invitation Cards</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>Digital Invites</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+          <h4>Event Branding</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon"><i class="fas fa-concierge-bell"></i></div>
+          <h4>Hospitality</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-car"></i></div>
+          <h4>Transportation</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h4>Guest Management</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Security</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-heart"></i></div>
+          <h4>Wedding Planning</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-globe"></i></div>
+          <h4>Destination Planning</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon"><i class="fas fa-comments"></i></div>
+          <h4>Event Consultation</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-broadcast-tower"></i></div>
+          <h4>Live Streaming</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+          <h4>Photo Booth</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-tv"></i></div>
+          <h4>LED Wall Setup</h4>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h4>Theme Decoration</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       9. OUR PROCESS
+  ============================================ -->
+  <section class="section" aria-label="Our process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">Our <span class="highlight">Process</span></h2>
+        <p class="section-desc">A seamless five-step process designed to turn your vision into a spectacular reality.</p>
+      </div>
+      <div class="process-timeline" id="processTimeline" data-aos="fade-up">
+        <div class="process-line-fill"></div>
+        <div class="process-step">
+          <div class="process-step-number">01</div>
+          <div>
+            <div class="process-step-icon"><i class="fas fa-comments"></i></div>
+            <h4>Consultation</h4>
+            <p>We listen to your vision, preferences, and requirements.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">02</div>
+          <div>
+            <div class="process-step-icon"><i class="fas fa-clipboard-list"></i></div>
+            <h4>Planning</h4>
+            <p>Detailed event blueprint with timeline and budget.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">03</div>
+          <div>
+            <div class="process-step-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h4>Design</h4>
+            <p>Creative concepts, 3D renders, and mood boards.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">04</div>
+          <div>
+            <div class="process-step-icon"><i class="fas fa-cogs"></i></div>
+            <h4>Execution</h4>
+            <p>Flawless setup and real-time coordination.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">05</div>
+          <div>
+            <div class="process-step-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h4>Celebration</h4>
+            <p>Your perfect event comes to life — celebrate!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       10. FEATURED PROJECTS
+  ============================================ -->
+  <section class="section section-alt" aria-label="Featured projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section-desc">A glimpse of our finest work — events that left our clients and guests in awe.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80" alt="Royal wedding celebration" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Wedding</span>
+            <h3>Royal Palace Wedding</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Udaipur</span>
+              <span class="project-meta-item"><i class="fas fa-users"></i> 800 Guests</span>
+              <span class="project-meta-item"><i class="fas fa-calendar"></i> 3 Days</span>
+            </div>
+            <a href="#gallery" class="btn btn-outline-dark btn-sm btn-ripple"><i class="fas fa-images"></i> View Gallery</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="Corporate annual summit" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Corporate</span>
+            <h3>Tech Summit 2024</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Mumbai</span>
+              <span class="project-meta-item"><i class="fas fa-users"></i> 2000 Attendees</span>
+              <span class="project-meta-item"><i class="fas fa-calendar"></i> 2 Days</span>
+            </div>
+            <a href="#gallery" class="btn btn-outline-dark btn-sm btn-ripple"><i class="fas fa-images"></i> View Gallery</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="Grand concert event" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Concert</span>
+            <h3>Starlight Music Festival</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Goa</span>
+              <span class="project-meta-item"><i class="fas fa-users"></i> 5000+ Attendees</span>
+              <span class="project-meta-item"><i class="fas fa-calendar"></i> 2 Days</span>
+            </div>
+            <a href="#gallery" class="btn btn-outline-dark btn-sm btn-ripple"><i class="fas fa-images"></i> View Gallery</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-img img-zoom">
+            <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&q=80" alt="Beachfront destination wedding" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Destination Wedding</span>
+            <h3>Beach Paradise Wedding</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Maldives</span>
+              <span class="project-meta-item"><i class="fas fa-users"></i> 200 Guests</span>
+              <span class="project-meta-item"><i class="fas fa-calendar"></i> 4 Days</span>
+            </div>
+            <a href="#gallery" class="btn btn-outline-dark btn-sm btn-ripple"><i class="fas fa-images"></i> View Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       11. GALLERY
+  ============================================ -->
+  <section class="section" id="gallery" aria-label="Gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Event <span class="highlight">Gallery</span></h2>
+        <p class="section-desc">Browse through our curated collection of stunning event moments captured across venues and celebrations.</p>
+      </div>
+
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+        <button class="filter-btn" data-filter="concert">Concert</button>
+        <button class="filter-btn" data-filter="decoration">Decoration</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item tall" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Wedding ceremony" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Wedding Ceremony</span></div>
+        </div>
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80" alt="Corporate conference" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Corporate Event</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=600&q=80" alt="Luxury decoration" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Luxury Decor</span></div>
+        </div>
+        <div class="gallery-item" data-category="concert">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80" alt="Concert stage" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Concert Stage</span></div>
+        </div>
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80" alt="Gourmet catering" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Gourmet Catering</span></div>
+        </div>
+        <div class="gallery-item wide" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Wedding reception hall" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Wedding Reception</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80" alt="Floral arrangement" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Floral Design</span></div>
+        </div>
+        <div class="gallery-item" data-category="concert">
+          <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Live concert" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Live Performance</span></div>
+        </div>
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Fine Dining</span></div>
+        </div>
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80" alt="Corporate presentation" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Conference</span></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80" alt="Outdoor wedding" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Garden Wedding</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&q=80" alt="Stage setup" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Stage Setup</span></div>
+        </div>
+        
+        <!-- New Extra Photos -->
+        <div class="gallery-item" data-category="decoration">
+          <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&q=80" alt="Luxury Table Setup" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Luxury Table Setup</span></div>
+        </div>
+        <div class="gallery-item tall" data-category="decoration">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80" alt="Event Lighting" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Event Lighting</span></div>
+        </div>
+        <div class="gallery-item" data-category="corporate">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" alt="Exclusive Gala" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Exclusive Gala</span></div>
+        </div>
+        <div class="gallery-item wide" data-category="food">
+          <img src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?w=600&q=80" alt="Gourmet Plating" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Gourmet Plating</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <div class="lightbox-content">
+        <img src="" alt="Gallery image" id="lightboxImg">
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ============================================
+       12. PACKAGES
+  ============================================ -->
+  <section class="section section-alt" id="packages" aria-label="Pricing packages">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Our <span class="highlight">Packages</span></h2>
+        <p class="section-desc">Transparent pricing designed to deliver luxury at every budget level. Every package is fully customizable.</p>
+      </div>
+      <div class="packages-grid">
+        <!-- Silver -->
+        <div class="package-card" data-aos="fade-up">
+          <div class="package-icon"><i class="fas fa-medal"></i></div>
+          <h3 class="package-name">Silver</h3>
+          <div class="package-price">₹1.5L <span>starting</span></div>
+          <p class="package-desc">Perfect for intimate gatherings</p>
+          <ul class="package-features">
+            <li><i class="fas fa-check"></i> Venue Decoration</li>
+            <li><i class="fas fa-check"></i> Basic Lighting</li>
+            <li><i class="fas fa-check"></i> Sound System</li>
+            <li><i class="fas fa-check"></i> Photography (4 hrs)</li>
+            <li><i class="fas fa-check"></i> Event Coordinator</li>
+            <li class="disabled"><i class="fas fa-times"></i> Videography</li>
+            <li class="disabled"><i class="fas fa-times"></i> Entertainment</li>
+            <li class="disabled"><i class="fas fa-times"></i> Drone Coverage</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark btn-ripple" style="width:100%">Choose Silver</a>
+        </div>
+
+        <!-- Gold -->
+        <div class="package-card" data-aos="fade-up">
+          <div class="package-icon" style="color:var(--gold)"><i class="fas fa-crown"></i></div>
+          <h3 class="package-name">Gold</h3>
+          <div class="package-price">₹3.5L <span>starting</span></div>
+          <p class="package-desc">Ideal for grand celebrations</p>
+          <ul class="package-features">
+            <li><i class="fas fa-check"></i> Premium Decoration</li>
+            <li><i class="fas fa-check"></i> Designer Lighting</li>
+            <li><i class="fas fa-check"></i> Pro Sound System</li>
+            <li><i class="fas fa-check"></i> Photography (Full Day)</li>
+            <li><i class="fas fa-check"></i> Videography</li>
+            <li><i class="fas fa-check"></i> Event Manager</li>
+            <li><i class="fas fa-check"></i> Basic Entertainment</li>
+            <li class="disabled"><i class="fas fa-times"></i> Drone Coverage</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark btn-ripple" style="width:100%">Choose Gold</a>
+        </div>
+
+        <!-- Platinum (Popular) -->
+        <div class="package-card popular" data-aos="fade-up">
+          <div class="popular-badge">
+            <span class="luxury-badge"><i class="fas fa-fire"></i> Most Popular</span>
+          </div>
+          <div class="package-icon"><i class="fas fa-gem"></i></div>
+          <h3 class="package-name">Platinum</h3>
+          <div class="package-price">₹7L <span>starting</span></div>
+          <p class="package-desc">The ultimate luxury experience</p>
+          <ul class="package-features">
+            <li><i class="fas fa-check"></i> Luxury Decoration</li>
+            <li><i class="fas fa-check"></i> Cinematic Lighting</li>
+            <li><i class="fas fa-check"></i> Concert Sound System</li>
+            <li><i class="fas fa-check"></i> Premium Photography</li>
+            <li><i class="fas fa-check"></i> Cinematic Videography</li>
+            <li><i class="fas fa-check"></i> Dedicated Manager</li>
+            <li><i class="fas fa-check"></i> Entertainment + DJ</li>
+            <li><i class="fas fa-check"></i> Drone Coverage</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-ripple" style="width:100%">Choose Platinum</a>
+        </div>
+
+        <!-- Diamond -->
+        <div class="package-card" data-aos="fade-up">
+          <div class="package-icon"><i class="fas fa-star"></i></div>
+          <h3 class="package-name">Diamond</h3>
+          <div class="package-price">₹15L+ <span>custom</span></div>
+          <p class="package-desc">Bespoke luxury — no limits</p>
+          <ul class="package-features">
+            <li><i class="fas fa-check"></i> Everything in Platinum</li>
+            <li><i class="fas fa-check"></i> Celebrity Management</li>
+            <li><i class="fas fa-check"></i> Destination Planning</li>
+            <li><i class="fas fa-check"></i> Live Streaming</li>
+            <li><i class="fas fa-check"></i> LED Wall + Photo Booth</li>
+            <li><i class="fas fa-check"></i> Guest Management</li>
+            <li><i class="fas fa-check"></i> Security Team</li>
+            <li><i class="fas fa-check"></i> Custom Everything</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark btn-ripple" style="width:100%">Choose Diamond</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       13. TEAM MEMBERS
+  ============================================ -->
+  <section class="section" aria-label="Our team">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet The <span class="highlight">Experts</span></h2>
+        <p class="section-desc">The passionate professionals behind every successful event.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80" alt="Arjun Mehta - CEO" loading="lazy">
+          </div>
+          <h4>Arjun Mehta</h4>
+          <p class="team-role">Founder & CEO</p>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="Priya Sharma - Creative Director" loading="lazy">
+          </div>
+          <h4>Priya Sharma</h4>
+          <p class="team-role">Creative Director</p>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80" alt="Neha Kapoor - Wedding Planner" loading="lazy">
+          </div>
+          <h4>Neha Kapoor</h4>
+          <p class="team-role">Head Wedding Planner</p>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Rahul Verma - Designer" loading="lazy">
+          </div>
+          <h4>Rahul Verma</h4>
+          <p class="team-role">Lead Designer</p>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       14. CLIENT TESTIMONIALS
+  ============================================ -->
+  <section class="section testimonials-section" id="testimonials" aria-label="Client testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our <span style="color:var(--gold)">Clients</span> Say</h2>
+        <p class="section-desc">Don't just take our word for it — hear from the families and brands we've had the privilege of serving.</p>
+      </div>
+      <div class="swiper testimonials-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Events By Evara transformed our wedding into a fairy tale. Every detail was perfect — from the flowers to the lighting. We couldn't have asked for a more magical day."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-img">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Ananya Gupta" loading="lazy">
+                </div>
+                <div>
+                  <div class="testimonial-author-name">Ananya Gupta</div>
+                  <div class="testimonial-author-role">Bride, Mumbai Wedding</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Our annual tech summit was flawlessly executed. The team handled 2000+ attendees, celebrity speakers, and live streaming without a single hiccup. Truly world-class."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-img">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Vikram Reddy" loading="lazy">
+                </div>
+                <div>
+                  <div class="testimonial-author-name">Vikram Reddy</div>
+                  <div class="testimonial-author-role">CTO, TechNova Solutions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"From my 50th birthday bash to my daughter's engagement, Evara has handled four events for our family. Each one has been more spectacular than the last. They're family now!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-img">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Meera Patel" loading="lazy">
+                </div>
+                <div>
+                  <div class="testimonial-author-name">Meera Patel</div>
+                  <div class="testimonial-author-role">Loyal Client, Ahmedabad</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Our product launch needed to be perfect, and Evara delivered beyond expectations. The stage design, lighting, and drone coverage made it an unforgettable evening."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-img">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&q=80" alt="Sanjay Nair" loading="lazy">
+                </div>
+                <div>
+                  <div class="testimonial-author-name">Sanjay Nair</div>
+                  <div class="testimonial-author-role">CEO, LuxeLife Brands</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       15. AWARDS & RECOGNITION
+  ============================================ -->
+  <section class="section section-alt" aria-label="Awards and recognition">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Recognition</span>
+        <h2 class="section-title">Awards & <span class="highlight">Achievements</span></h2>
+        <p class="section-desc">Industry recognition for our commitment to excellence in event management.</p>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <h4>Best Event Company</h4>
+          <p>National Event Awards 2023</p>
+        </div>
+        <div class="award-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="award-icon"><i class="fas fa-award"></i></div>
+          <h4>Wedding Planner of the Year</h4>
+          <p>WeddingSutra Awards 2022</p>
+        </div>
+        <div class="award-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="award-icon"><i class="fas fa-certificate"></i></div>
+          <h4>Excellence in Design</h4>
+          <p>India Design Council 2023</p>
+        </div>
+        <div class="award-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="award-icon"><i class="fas fa-star"></i></div>
+          <h4>5-Star Rated Agency</h4>
+          <p>Google Business Reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       16. EVENT STATISTICS
+  ============================================ -->
+  <section class="section stats-section" id="stats" aria-label="Statistics">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Numbers</span>
+        <h2 class="section-title">Our <span class="highlight">Impact</span> in Numbers</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon"><i class="fas fa-smile"></i></div>
+          <div class="stat-number">
+            <span class="counter" data-target="1000">0</span><span class="suffix">+</span>
+          </div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="stat-number">
+            <span class="counter" data-target="500">0</span><span class="suffix">+</span>
+          </div>
+          <div class="stat-label">Events Completed</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon"><i class="fas fa-city"></i></div>
+          <div class="stat-number">
+            <span class="counter" data-target="150">0</span><span class="suffix">+</span>
+          </div>
+          <div class="stat-label">Cities Covered</div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-icon"><i class="fas fa-heart"></i></div>
+          <div class="stat-number">
+            <span class="counter" data-target="98">0</span><span class="suffix">%</span>
+          </div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       17. FAQ
+  ============================================ -->
+  <section class="section" id="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+        <p class="section-desc">Everything you need to know before booking your event with us.</p>
+      </div>
+      <div class="faq-container" data-aos="fade-up">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            How far in advance should I book my event?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">We recommend booking at least 3-6 months in advance for large events like weddings and corporate galas. For smaller events, 4-6 weeks notice is usually sufficient. However, for destination weddings or peak season dates, we suggest reaching out 8-12 months ahead to ensure availability.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is included in your event packages?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">Our packages include venue decoration, lighting, sound system, photography, event coordination, and more depending on the tier you choose. Each package is fully customizable — you can add or remove services to match your needs and budget. We also offer à la carte services.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you handle destination weddings?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">Absolutely! Destination weddings are one of our specialties. We've organized stunning celebrations in Udaipur, Goa, Jaipur, Kerala, Maldives, Thailand, and many more exotic locations. We handle everything from venue sourcing and travel coordination to local vendor management.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I customize my event theme?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">Yes! We encourage it. Our creative team will work closely with you to develop a unique theme that reflects your personality and vision. From royal Rajasthani themes to modern minimalist aesthetics, we bring your dream concept to life with 3D renders and mood boards before execution.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is your cancellation policy?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">We understand plans can change. Cancellations made 60+ days before the event receive a full refund minus the booking deposit. Cancellations within 30-60 days receive a 50% refund. Within 30 days, we offer credit toward a future event. We also offer event date changes subject to availability.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide catering services?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">Yes, we partner with top caterers and five-star chefs to offer a wide range of cuisines — from traditional Indian to international fine dining. We handle everything from menu curation and food tasting sessions to live cooking stations and bar services.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       18. CONTACT SECTION
+  ============================================ -->
+  <section class="section section-alt" id="contact" aria-label="Contact us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Plan Your <span class="highlight">Dream Event</span></h2>
+        <p class="section-desc">Ready to create something extraordinary? Reach out and let's start planning.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Contact Information</h3>
+          <p>We'd love to hear from you. Reach out through any channel.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-item-text">
+              <h5>Phone</h5>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <h5>Email</h5>
+              <p><a href="mailto:hello@eventsbyevara.com">hello@eventsbyevara.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <h5>Office</h5>
+              <p>42, Luxury Plaza, Bandra West,<br>Mumbai, Maharashtra 400050</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-item-text">
+              <h5>Working Hours</h5>
+              <p>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: By Appointment</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="contact-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="map-container" data-aos="fade-up">
+            <i class="fas fa-map-marked-alt" style="margin-right:8px"></i> Interactive Google Map
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <span class="error-message">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <span class="error-message">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                <span class="error-message">Please enter a valid phone number</span>
+              </div>
+              <div class="form-group">
+                <label for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="concert">Concert / Show</option>
+                  <option value="destination">Destination Wedding</option>
+                  <option value="fashion">Fashion Show</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message">Please select an event type</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select budget range</option>
+                  <option value="under-2l">Under ₹2 Lakhs</option>
+                  <option value="2l-5l">₹2 - 5 Lakhs</option>
+                  <option value="5l-10l">₹5 - 10 Lakhs</option>
+                  <option value="10l-25l">₹10 - 25 Lakhs</option>
+                  <option value="25l-plus">₹25 Lakhs+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="eventDate">Event Date</label>
+                <input type="date" id="eventDate" name="eventDate">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="location">Event Location</label>
+              <input type="text" id="location" name="location" placeholder="City or venue name">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your vision for the event..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-ripple" style="width:100%">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       19. NEWSLETTER
+  ============================================ -->
+  <section class="newsletter" aria-label="Newsletter subscription">
+    <div class="container">
+      <div class="newsletter-card" data-aos="fade-up">
+        <h3>Stay Updated With Our Latest Events</h3>
+        <p>Subscribe to our newsletter for event inspiration, planning tips, and exclusive offers.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
+          <button type="submit" class="btn btn-gold btn-ripple"><i class="fas fa-arrow-right"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       20. INSTAGRAM FEED
+  ============================================ -->
+  <section class="section" aria-label="Instagram feed">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Follow Us</span>
+        <h2 class="section-title">Our <span class="highlight">Instagram</span></h2>
+      </div>
+      <div class="insta-grid" data-aos="fade-up">
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=400&q=80" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+      </div>
+      <div class="insta-follow" data-aos="fade-up">
+        <a href="#"><i class="fab fa-instagram"></i> @eventsbyevara</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       21. CTA BANNER
+  ============================================ -->
+  <section class="cta-banner" aria-label="Call to action">
+    <div class="cta-bg">
+      <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80" alt="Event venue background" loading="lazy">
+      <div class="cta-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-aos="zoom-in">
+        <h2>Let's Create Something <span style="color:var(--gold)">Extraordinary</span> Together</h2>
+        <p>Your dream event is just one conversation away. Let's make it unforgettable.</p>
+        <a href="#contact" class="btn btn-gold btn-lg btn-ripple"><i class="fas fa-phone-alt"></i> Book Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       22. FOOTER
+  ============================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand" data-aos="fade-up">
+          <a href="#home" class="nav-logo">
+            <div class="nav-logo-icon">E</div>
+            Events By <span>Evara</span>
+          </a>
+          <p>India's premier luxury event management agency. Crafting extraordinary celebrations, weddings, corporate events, and unforgettable experiences since 2014.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Wedding Planning</a></li>
+            <li><a href="#services">Corporate Events</a></li>
+            <li><a href="#services">Destination Weddings</a></li>
+            <li><a href="#services">Concert Management</a></li>
+            <li><a href="#services">Photography</a></li>
+            <li><a href="#services">Catering</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Events By Evara. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color:var(--gold)"></i> in India.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       FLOATING ELEMENTS
+  ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Success Modal -->
+  <div class="success-modal" id="successModal" role="dialog" aria-label="Form submitted successfully">
+    <div class="success-modal-content">
+      <div class="success-modal-icon"><i class="fas fa-check"></i></div>
+      <h3>Thank You!</h3>
+      <p>Your message has been sent successfully. Our team will get back to you within 24 hours.</p>
+      <button class="btn btn-primary btn-ripple" id="closeModal">Got It</button>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS
+  ============================================ -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
